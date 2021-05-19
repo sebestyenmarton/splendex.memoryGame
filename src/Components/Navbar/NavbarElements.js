@@ -2,7 +2,7 @@ import { IoMdArrowDropdown, IoMdArrowDropup } from 'react-icons/io';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background-color: #1f1f1f;
+  background-color: #151515;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,10 +40,12 @@ export const SetGameContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: -128px;
   @media screen and (max-width: 650px){
     margin: 0;
   }
+`;
+export const DeckContainer = styled.div`
+  height: 100%;
 `;
 
 export const DeckText = styled.div`
@@ -62,6 +64,11 @@ export const DeckSize = styled.button`
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  &:hover{
+    background: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 3px;
+  }
 `;
 
 export const DeckSlidebar = styled.ul`
@@ -72,7 +79,6 @@ export const DeckSlidebar = styled.ul`
   border-radius: 3px;
   position: absolute;
   top: 43px;
-  margin-left: -110px;
   display: none;
 `;
 
@@ -81,10 +87,15 @@ export const DeckLink = styled.li`
   align-items: center;
   justify-content: center;
   list-style: none;
-  height: 56px;
+  height: 36px;
   width: 63.2px;
   color: #1f1f1f;
   font-weight: 100;
+  &:hover{
+    background: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 3px;
+  }
 `;
 
 export const SetGameButton = styled.button`
@@ -98,6 +109,11 @@ export const SetGameButton = styled.button`
   border-radius: 3px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: .3s ease-in-out;  
+  &:hover{
+    background: #f4f4f4;
+    color: #1f1f1f
+  }
 `;
 
 export const DropDown = styled(IoMdArrowDropdown)`
