@@ -64,6 +64,7 @@ export const DeckSize = styled.button`
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  min-width: 63.2px;
   &:hover{
     background: #f4f4f4;
     box-shadow: 0 0 10px rgba(0,0,0,.2);

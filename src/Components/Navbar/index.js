@@ -26,19 +26,16 @@ const Navbar = ({}) => {
       $('#DropDown').css("display","block");
       $('#DropUp, #DeckSlidebar').css("display","none");
     });
-/*
-    var numbers = ['1','2','3','4','5','6','7','8']; 
-    numbers.forEach(myFunction);
-    function myFunction(i, val) {
-      $('.DeckLink:nth-child(' + val + ')').mouseenter(function(){
-        $('.Size').innerHTML = '.DeckLink:nth-child(' + val + ')'; 
-      });
-      $('.DeckLink:nth-child(' + val + ')').mouseleave(function(){
-        $('.Size').innerHTML = '10'; 
-      });
-    }
-*/
+    $('#DeckLink1').click(function(){$('#Size').html("6");});
+    $('#DeckLink2').click(function(){$('#Size').html("8");});
+    $('#DeckLink3').click(function(){$('#Size').html("10");});
+    $('#DeckLink4').click(function(){$('#Size').html("12");});
+    $('#DeckLink5').click(function(){$('#Size').html("14");});
+    $('#DeckLink6').click(function(){$('#Size').html("16");});
+    $('#DeckLink7').click(function(){$('#Size').html("18");});
+    $('#DeckLink8').click(function(){$('#Size').html("20");});  
   });
+
 
   return (
   <Nav>
@@ -48,19 +45,19 @@ const Navbar = ({}) => {
         <DeckText id="DeckText" > Deck size: </DeckText>
         <DeckContainer id="DeckContainer">
           <DeckSize id="DeckSize"> 
-            <div class="Size" >20</div> 
+            <div id="Size" >20</div> 
             <DropDown id="DropDown" />
             <DropUp id="DropUp" />
           </DeckSize>
           <DeckSlidebar id="DeckSlidebar">
-            <DeckLink class="DeckLink" >6</DeckLink>
-            <DeckLink class="DeckLink" >8</DeckLink>
-            <DeckLink class="DeckLink" >10</DeckLink>
-            <DeckLink class="DeckLink" >12</DeckLink>
-            <DeckLink class="DeckLink" >14</DeckLink>
-            <DeckLink class="DeckLink" >16</DeckLink>
-            <DeckLink class="DeckLink" >18</DeckLink>
-            <DeckLink class="DeckLink">20</DeckLink>
+            <DeckLink id="DeckLink1">6</DeckLink>
+            <DeckLink id="DeckLink2">8</DeckLink>
+            <DeckLink id="DeckLink3">10</DeckLink>
+            <DeckLink id="DeckLink4">12</DeckLink>
+            <DeckLink id="DeckLink5">14</DeckLink>
+            <DeckLink id="DeckLink6">16</DeckLink>
+            <DeckLink id="DeckLink7">18</DeckLink>
+            <DeckLink id="DeckLink8">20</DeckLink>
           </DeckSlidebar>
         </DeckContainer>
         <SetGameButton>start new game</SetGameButton>
