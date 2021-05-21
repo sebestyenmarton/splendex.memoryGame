@@ -1,10 +1,12 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
 
-
 const Index = () => {
   return (
-    <Navbar/>
+    <>
+      {/* <Mainpage/> */}
+      <Navbar/>
+    </>
   );
 };
 
