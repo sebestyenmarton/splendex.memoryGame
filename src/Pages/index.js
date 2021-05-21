@@ -4,7 +4,6 @@ import Navbar from '../Components/Navbar';
 const Index = () => {
   return (
     <>
-      {/* <Mainpage/> */}
       <Navbar/>
     </>
   );

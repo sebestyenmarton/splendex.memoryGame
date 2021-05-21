@@ -1,5 +1,5 @@
 import { IoMdArrowDropdown, IoMdArrowDropup } from 'react-icons/io';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 export const SetGameContainer = styled.div`
   width: 100%;
@@ -61,10 +61,13 @@ export const DeckSlidebar = styled.ul`
   background: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,.2);
   border-radius: 3px;
-  position: relative;
+  position: relative;  
   display: none;
+  top: -324px;
   width: 63.2px;
+  max-width: 63.2px;
   &.topPosition{
+    position: absolute;
     top: 36px;
   }
 `;

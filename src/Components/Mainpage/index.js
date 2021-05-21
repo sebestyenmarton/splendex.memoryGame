@@ -1,27 +1,26 @@
-import $ from 'jquery';
 import React from 'react';
-import Logo from '../../Images/evista.png';
-import { Nav, NavbarContainer, NavbarLogo } from '../Navbar/NavbarElements';
-import SetGame from '../SetGame';
-import { MainPage } from './MainpageElements';
+import {
+  MainpageContainer,
+  MainpageRules,
+  MainpageTitle,
+  TextLi
+} from './MainpageElements';
 
 const Mainpage = () => {
   return (
-    <MainPage id="Mainpage" >
-      <Nav>
-        <NavbarContainer>
-        <NavbarLogo src={Logo} />
-        </NavbarContainer>
-      </Nav>
-      <SetGame/>
-    </MainPage>
-  )
-}
+    <MainpageContainer id="MainpageContainer" >
+      <MainpageTitle>
+        Splendex Memory Game
+      </MainpageTitle>
+      <MainpageRules>
+        <TextLi>At the beginning of the game, all the cards are mixed up and laid in rows, face down on the window.</TextLi>
+        <TextLi>The Player turns over two cards:</TextLi>
+        <TextLi>If the cards don’t match (it’s not a pair), them turns back.</TextLi>
+        <TextLi>However, if the two cards match, it’s a pair!</TextLi>
+        <TextLi> When the player have found all the pairs, the game is end.</TextLi>
+      </MainpageRules>
+    </MainpageContainer>
+  );
+};
 
-$(document).ready(function(){
-  $('#MainpageStart').click(function(){
-    $('#Mainpage').css("display","none");
-    //$('#SetGameContainer').css($("display","flex"));
-  });
-});
 export default Mainpage;

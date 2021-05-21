@@ -1,5 +1,6 @@
 import { default as $, default as jQuery } from 'jquery';
 import React from 'react';
+import Mainpage from '../Mainpage';
 import {
   DeckContainer,
   DeckLink,
@@ -15,6 +16,7 @@ import {
 const SetGame = () => {
   return (
     <SetGameContainer id="SetGameContainer" primary={1} >
+      <Mainpage/>
       <DeckText id="DeckText" > Deck size: </DeckText>
       <DeckContainer id="DeckContainer">
         <DeckSize id="DeckSize"> 
@@ -55,7 +57,7 @@ $(document).ready(function(){
     $('#DropUp, #DeckSlidebar').css("display","none");
   };
   $('#MainpageStart').click(function(){
-    $('#SetGameContainer, #DeckText, #DeckSlidebaar').addClass("topPosition");
+    $('#SetGameContainer, #DeckText, #DeckSlidebar, #MainpageContainer').addClass("topPosition");
     $(this).addClass("topPosition");
   });
   var numbers = ['6','8','10','12','14','16','18','20'];  
