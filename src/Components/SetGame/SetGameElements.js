@@ -80,7 +80,7 @@ export const DeckLink = styled.li`
   height: 36px;
   width: 63.2px;
   color: #1f1f1f;
-  font-weight: 100;
+  font-weight: 500;
   &:hover{
     background: #f4f4f4;
     box-shadow: 0 0 10px rgba(0,0,0,.2);
@@ -101,7 +101,7 @@ export const SetGameButton = styled.button`
   padding: 0 12px;
   background: #ff3000;
   color: #f4f4f4;
-  font-weight: bold;
+  font-weight: 500;
   border: none;
   border-radius: 3px;
   text-transform: uppercase;

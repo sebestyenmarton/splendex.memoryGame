@@ -20,9 +20,13 @@ export const MainpageTitle = styled.div`
 export const MainpageRules = styled.div`
   list-style-type: circle;
   padding-bottom: 1.2rem;
-  
+  text-align: center;
+  @media screen and (max-width: 600px){
+    text-align: left;
+  }
 `;
 
 export const TextLi = styled.h4`
   padding: 0.3rem 0;
+  font-weight: 400;
 `;

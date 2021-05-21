@@ -1,6 +1,6 @@
 import { default as $, default as jQuery } from 'jquery';
 import React from 'react';
-import Mainpage from '../Mainpage';
+import Mainpage from '../MainPage';
 import {
   DeckContainer,
   DeckLink,

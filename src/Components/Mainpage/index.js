@@ -4,7 +4,7 @@ import {
   MainpageRules,
   MainpageTitle,
   TextLi
-} from './MainpageElements';
+} from './MainPageElements';
 
 const Mainpage = () => {
   return (
