@@ -33,8 +33,8 @@ export const NavbarLogo = styled.img`
   height: 100%;
   width: initial;
   border-radius: 3px;
-  padding: 0 24px;
+  margin: 0 24px;
   @media screen and (max-width: 400px){
-    padding: 0px 12px;
+    margin: 0px 12px;
   }
 `;

@@ -17,7 +17,7 @@ const SetGame = () => {
   return (
     <SetGameContainer id="SetGameContainer" primary={1} >
       <Mainpage/>
-      <DeckText id="DeckText" > Deck size: </DeckText>
+      <DeckText id="DeckText"> Deck size: </DeckText>
       <DeckContainer id="DeckContainer">
         <DeckSize id="DeckSize"> 
           <div id="Size" >20</div> 

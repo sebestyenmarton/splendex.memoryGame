@@ -29,8 +29,9 @@ export const DeckText = styled.div`
   font-size: 0.7rem;
   color: #1f1f1f;
   height: 36px;
-  display:flex;
+  display: flex;
   align-items: center;
+  text-align: right;
   &.topPosition{
     color: #f4f4f4;
   }
@@ -49,6 +50,7 @@ export const DeckSize = styled.button`
   cursor: pointer;
   min-width: 63.2px;
   height: 36px;
+  font-weight: 500;
   &:hover{
     background: #f4f4f4;
     border-radius: 3px;
@@ -115,7 +117,7 @@ export const SetGameButton = styled.button`
     margin-top: 0;
     &:hover{
       background: #f4f4f4;
-      color: #ff3000;
+      color: #1f1f1f;
     }
   }
 `;
