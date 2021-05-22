@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background-color: #151515;
+  background-color: #242424;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,6 +35,6 @@ export const NavbarLogo = styled.img`
   border-radius: 3px;
   margin: 0 24px;
   @media screen and (max-width: 400px){
-    margin: 0px 12px;
+    color: #343434;: 0px 12px;
   }
 `;

@@ -57,7 +57,8 @@ $(document).ready(function(){
     $('#DropUp, #DeckSlidebar').css("display","none");
   };
   $('#MainpageStart').click(function(){
-    $('#SetGameContainer, #DeckText, #DeckSlidebar, #MainpageContainer').addClass("topPosition");
+    $('#SetGameContainer, #DeckText, #DeckSlidebar, #MainpageContainer, #GameBox')
+      .addClass("topPosition");
     $(this).addClass("topPosition");
   });
   var numbers = ['6','8','10','12','14','16','18','20'];  

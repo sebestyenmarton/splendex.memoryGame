@@ -1,5 +1,7 @@
 import React from 'react';
+import Mainbackground from '../../Images/background2.jpg';
 import {
+  MainpageBackground,
   MainpageContainer,
   MainpageRules,
   MainpageTitle,
@@ -9,6 +11,7 @@ import {
 const Mainpage = () => {
   return (
     <MainpageContainer id="MainpageContainer" >
+      <MainpageBackground src={Mainbackground}/>
       <MainpageTitle>
         Splendex Memory Game
       </MainpageTitle>

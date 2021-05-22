@@ -81,7 +81,7 @@ export const DeckLink = styled.li`
   list-style: none;
   height: 36px;
   width: 63.2px;
-  color: #1f1f1f;
+  color: #343434;
   font-weight: 500;
   &:hover{
     background: #f4f4f4;
@@ -119,6 +119,10 @@ export const SetGameButton = styled.button`
       background: #f4f4f4;
       color: #1f1f1f;
     }
+    &:active{
+      transition: 0s ease-in-out;  
+      background: #c4c4c4;
+  }
   }
 `;
 

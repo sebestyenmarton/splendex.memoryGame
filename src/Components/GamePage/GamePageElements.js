@@ -6,7 +6,7 @@ export const GPage = styled.div`
   position: fixed;
   background-color: #141414;
   z-index: -1;
-  display: flex;
+  display: flex; 
   justify-content: center;
 `;
 
@@ -19,12 +19,14 @@ export const GamePageContainer = styled.img`
 
 export const GameBox = styled.div`
   position: relative;
-  //background: #fff;
   z-index: 2;
   height: 100%;
   width: 800px;
   padding: 1rem 16px;
-  //display: none;
+  display: none;
+  &.topPosition{
+    display: block; 
+  }
 `;
 
 export const UpSection = styled.div`
@@ -71,5 +73,17 @@ export const RestartButton = styled.button`
   border-radius: 3px;
   cursor: pointer;
   transition: .3s ease-in-out;
-  height: 36px
+  height: 36px;
+  &:hover{
+      background: #ff3000;
+      color: #f4f4f4;
+      border: solid 1px #ff3000;
+    }
+    &:active{
+      transition: 0s ease-in-out;  
+      background: #c4c4c4;
+      border: solid 1px #c4c4c4;
+    }
+  }
 `;
+

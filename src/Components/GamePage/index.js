@@ -1,5 +1,6 @@
 import React from 'react';
 import Background from '../../Images/background.jpg';
+import Game from './Game';
 import {
   BestResult,
   BestResultNumber,
@@ -18,7 +19,7 @@ const GamePage = () => {
   return (
     <GPage>
       <GamePageContainer src={Background}/>
-      <GameBox>
+      <GameBox id="GameBox">
         <UpSection>
           <Tries>
             <TriesText> Current tries:</TriesText>
@@ -30,7 +31,7 @@ const GamePage = () => {
           </BestResult>
           <RestartButton> RESTART </RestartButton>
         </UpSection>  
-        {/* <Game/> */} 
+        <Game/>
       </GameBox>
     </GPage>
   );
