@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../Images/evista.png';
+import Logo from '../../Images/EvistaBackground.png';
 import SetGame from '../SetGame';
 import {
   Nav,

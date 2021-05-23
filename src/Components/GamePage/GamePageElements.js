@@ -37,6 +37,8 @@ export const UpSection = styled.div`
 export const Tries = styled.div`
   display: flex;
   align-items: center;
+  position: relative;
+  top: -3px; 
 `;
 
 export const TriesText = styled.h5`
@@ -64,6 +66,8 @@ export const BestResultNumber = styled.h2`
 `;
 
 export const RestartButton = styled.button`
+  position: relative;
+  top: 7px; 
   background-color: #ffffff10;
   min-width: 99px;
   padding: 0 12px;
