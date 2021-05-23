@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../../Images/EvistaBackground.png';
-import SetGame from '../SetGame';
+import SetGame from '../SetGameComponents';
 import {
   Nav,
   NavbarContainer,

@@ -13,9 +13,8 @@ import {
   CardBox,
   CardEmpty,
   CardImg,
-
   GameContainer
-} from './GameElements';
+} from './CardElements';
 
 
 

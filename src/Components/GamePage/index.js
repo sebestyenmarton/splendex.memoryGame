@@ -1,6 +1,6 @@
 import React from 'react';
 import Background from '../../Images/background.jpg';
-import Game from './Game';
+import Game from '../Cards/Cards';
 import {
   BestResult,
   BestResultNumber,
