@@ -9,100 +9,101 @@ import Img7 from "../../Images/redux.png";
 import Img8 from "../../Images/sass.png";
 import Img9 from "../../Images/ts.png";
 import Img10 from "../../Images/webpack.png";
+import '../App';
 import {
   CardBox,
+  CardContainer,
   CardEmpty,
-  CardImg,
-  GameContainer
+  CardImg
 } from './CardElements';
-
-
 
 const Game = () => {
   return (
-    <GameContainer>
-      <CardBox id='Cardbox1'>
-        <CardEmpty id='Face1'/>
-        <CardImg id='CardImg1' src={Img1}/>
+    <CardContainer className='CardContainer'>
+      <CardBox className='Cardbox' data-framework="card1">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img1}/>
       </CardBox>
-      <CardBox id='Cardbox2'>
-        <CardEmpty id='Face2'/>
-        <CardImg id='CardImg2' src={Img2}/>
+      <CardBox className='Cardbox' data-framework="card2">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img2}/>
       </CardBox>
-      <CardBox id='Cardbox3'>
-        <CardEmpty id='Face3'/>
-        <CardImg id='CardImg3' src={Img3}/>
+      <CardBox className='Cardbox' data-framework="card3">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img3}/>
       </CardBox>
-      <CardBox id='Cardbox4'>
-        <CardEmpty id='Face4'/>
-        <CardImg id='CardImg4' src={Img4}/>
+      <CardBox className='Cardbox' data-framework="card4">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img4}/>
       </CardBox>
-      <CardBox id='Cardbox5'>
-        <CardEmpty id='Face5'/>
-        <CardImg id='CardImg5' src={Img5}/>
+      <CardBox className='Cardbox' data-framework="card5">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img5}/>
       </CardBox>
-      <CardBox id='Cardbox6'>
-        <CardEmpty id='Face6'/>
-        <CardImg id='CardImg6' src={Img6}/>
+      <CardBox className='Cardbox' data-framework="card6">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img6}/>
       </CardBox>
-      <CardBox id='Cardbox7'>
-        <CardEmpty id='Face7'/>
-        <CardImg id='CardImg7' src={Img7}/>
+      <CardBox className='Cardbox' data-framework="card7">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img7}/>
       </CardBox>
-      <CardBox id='Cardbox8'>
-        <CardEmpty id='Face8'/>
-        <CardImg id='CardImg8' src={Img8}/>
+      <CardBox className='Cardbox' data-framework="card8">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img8}/>
       </CardBox>
-      <CardBox id='Cardbox9'>
-        <CardEmpty id='Face9'/>
-        <CardImg id='CardImg9' src={Img9}/>
+      <CardBox className='Cardbox' data-framework="card9">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img9}/>
       </CardBox>
-      <CardBox id='Cardbox10'>
-        <CardEmpty id='Face10'/>
-        <CardImg id='CardImg10' src={Img10}/>
+      <CardBox className='Cardbox' data-framework="card10">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img10}/>
       </CardBox>
-      <CardBox id='Cardbox11'>
-        <CardEmpty id='Face1'/>
-        <CardImg id='CardImg1' src={Img1}/>
+      <CardBox className='Cardbox' data-framework="card1">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img1}/>
       </CardBox>
-      <CardBox id='Cardbox12'>
-        <CardEmpty id='Face2'/>
-        <CardImg id='CardImg2' src={Img2}/>
+      <CardBox className='Cardbox' data-framework="card2">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img2}/>
       </CardBox>
-      <CardBox id='Cardbox13'>
-        <CardEmpty id='Face3'/>
-        <CardImg id='CardImg3' src={Img3}/>
+      <CardBox className='Cardbox' data-framework="card3">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img3}/>
       </CardBox>
-      <CardBox id='Cardbox14'>
-        <CardEmpty id='Face4'/>
-        <CardImg id='CardImg4' src={Img4}/>
+      <CardBox className='Cardbox' data-framework="card4">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img4}/>
       </CardBox>
-      <CardBox id='Cardbox15'>
-        <CardEmpty id='Face5'/>
-        <CardImg id='CardImg5' src={Img5}/>
+      <CardBox className='Cardbox' data-framework="card5">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img5}/>
       </CardBox>
-      <CardBox id='Cardbox16'>
-        <CardEmpty id='Face6'/>
-        <CardImg id='CardImg6' src={Img6}/>
+      <CardBox className='Cardbox' data-framework="card6">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img6}/>
       </CardBox>
-      <CardBox id='Cardbox17'>
-        <CardEmpty id='Face7'/>
-        <CardImg id='CardImg7' src={Img7}/>
+      <CardBox className='Cardbox' data-framework="card7">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img7}/>
       </CardBox>
-      <CardBox id='Cardbox18'>
-        <CardEmpty id='Face8'/>
-        <CardImg id='CardImg8' src={Img8}/>
+      <CardBox className='Cardbox' data-framework="card8">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img8}/>
       </CardBox>
-      <CardBox id='Cardbox19'>
-        <CardEmpty id='Face9'/>
-        <CardImg id='CardImg9' src={Img9}/>
+      <CardBox className='Cardbox' data-framework="card9">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img9}/>
       </CardBox>
-      <CardBox id='Cardbox20'>
-        <CardEmpty id='Face10'/>
-        <CardImg id='CardImg10' src={Img10}/>
+      <CardBox className='Cardbox' data-framework="card10">
+        <CardEmpty className='Face'/>
+        <CardImg className='CardImg' src={Img10}/>
       </CardBox>
-    </GameContainer>
+    </CardContainer>
   );
 };
 
 export default Game;
+
+

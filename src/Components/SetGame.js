@@ -5,7 +5,7 @@ $(document).ready(function(){
   $('#DeckContainer').mouseleave(function(){upFunction();});
   var clicks = 0;
   $('#DeckSize').click(function(){
-    if (clicks == 0){downFunction();++clicks;}
+    if (clicks === 0){downFunction();++clicks;}
     else{upFunction();--clicks;}
   });
   function downFunction(){
@@ -26,5 +26,6 @@ $(document).ready(function(){
     $('#DeckLink' + val).click(function(){
       $('#Size').html(val);
     });
-  });
+  }); 
 });
+

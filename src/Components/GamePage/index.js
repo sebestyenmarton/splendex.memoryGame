@@ -23,7 +23,7 @@ const GamePage = () => {
         <UpSection>
           <Tries>
             <TriesText> Current tries:</TriesText>
-            <TriesNumber> 0 </TriesNumber>
+            <TriesNumber id="currentTries"> 0 </TriesNumber>
           </Tries>
           <BestResult>
             <BestResultText> Best: </BestResultText>

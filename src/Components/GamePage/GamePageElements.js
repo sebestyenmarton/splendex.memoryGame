@@ -81,13 +81,12 @@ export const RestartButton = styled.button`
   &:hover{
       background: #ff3000;
       color: #f4f4f4;
-      border: solid 1px #ff3000;
+      border: solid 1px #ff3000;  
     }
-    &:active{
-      transition: 0s ease-in-out;  
-      background: #c4c4c4;
-      border: solid 1px #c4c4c4;
-    }
+  &:active{
+    transition: 0s ease-in-out;  
+    background: #c4c4c4;
+    border: solid 1px #c4c4c4;
   }
 `;
 

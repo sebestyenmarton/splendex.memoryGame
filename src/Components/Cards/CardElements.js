@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-
-export const GameContainer = styled.div`
+export const CardContainer = styled.div`
   width: 100%;
   position: absolute;
   left: 0;
@@ -14,6 +13,7 @@ export const GameContainer = styled.div`
 `;
 
 export const CardBox = styled.div`
+
   width: calc(19% - 10px);
   height: calc(20% - 10px);
   position: relative;
@@ -24,6 +24,16 @@ export const CardBox = styled.div`
   @media screen and (max-width: 470px){
     height: calc(15% - 10px);
     width: calc(27% - 10px);
+  }
+  transform-style: preserve-3d;
+  transition: transform .4s;
+  transform: scale(1);
+  &:active{
+    transition: transform .1s;
+    transform: scale(0.93);
+  }
+  &.rotate{
+    transform: rotateY(180deg);
   }
 `;
 
@@ -47,6 +57,7 @@ export const CardImg = styled.img`
   background: linear-gradient(to right, #f4f4f4 47%, #e3e3e3 53%);
   backface-visibility: hidden;
   border-radius: 12px;
+  transform: rotateY(180deg);
   @media screen and (max-width: 650px){
     padding: 10px;
   }
