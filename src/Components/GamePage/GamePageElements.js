@@ -1,4 +1,9 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const slideingAnimation3 = keyframes`
+ 0% { left:100px; opacity: 0}
+ 100% { left: 0; opacity: 1 }
+ `;
 
 export const GPage = styled.div`
   width: 100%;
@@ -32,6 +37,8 @@ export const GameBox = styled.div`
 export const UpSection = styled.div`
   display: flex;
   justify-content: space-between;
+  opacity: 0;
+  animation: ${slideingAnimation3} .7s ease-in-out .9s 1 forwards;
 `;
 
 export const Tries = styled.div`
@@ -55,6 +62,14 @@ export const BestResult = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
+
+export const GameTitle = styled.div`
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #242424;
+  position: relative;
+  top: 5px;
 `;
 
 export const BestResultText = styled.h5`

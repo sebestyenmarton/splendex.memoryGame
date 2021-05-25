@@ -24,7 +24,16 @@ $(document).ready(function(){
   var numbers = ['6','8','10','12','14','16','18','20'];  
   jQuery.each( numbers, function( i, val){     
     $('#DeckLink' + val).click(function(){
-      $('#Size').html(val);
+      setTimeout( () =>{
+        $('#DeckSize').removeClass("topPosition");
+      },400);
+      $('#DeckSize').addClass("topPosition");
+      if( val === 6 || val === 8){
+        $('#Size').html(" " + val + " ");
+      }else{
+        $('#Size').html(val);
+      }
+      upFunction();
     });
   }); 
 });

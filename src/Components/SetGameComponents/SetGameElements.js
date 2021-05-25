@@ -1,5 +1,14 @@
 import { IoMdArrowDropdown, IoMdArrowDropup } from 'react-icons/io';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const slideingAnimation2 = keyframes`
+ 0% { top:100px; opacity: 0}
+ 100% { top: 0vw; opacity: 1 }
+ `;
+const slideingAnimation3 = keyframes`
+ 0% { left:100px; opacity: 0}
+ 100% { left: 0; opacity: 1 }
+ `;
 
 export const SetGameContainer = styled.div`
   width: 100%;
@@ -7,10 +16,12 @@ export const SetGameContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: fixed;
+  opacity: 0;
   top: 0vw; 
   left: 0vw; 
   display: flex;
   flex-direction: column;
+  animation: ${slideingAnimation2} .7s ease-in-out .3s 1 forwards;
   &.topPosition{
     position: relative;
     flex-direction: row;
@@ -22,6 +33,8 @@ export const SetGameContainer = styled.div`
 `;
 export const DeckContainer = styled.div`
   height: 36px;
+  position: relative;
+  animation: ${slideingAnimation3} .7s ease-in-out .5s 1 forwards;
 `;
 
 export const DeckText = styled.div`
@@ -32,6 +45,8 @@ export const DeckText = styled.div`
   display: flex;
   align-items: center;
   text-align: right;
+  opacity: 0;
+  animation: ${slideingAnimation3} .7s ease-in-out .9s 1 forwards;
   &.topPosition{
     color: #f4f4f4;
   }
@@ -51,9 +66,14 @@ export const DeckSize = styled.button`
   min-width: 63.2px;
   height: 36px;
   font-weight: 500;
+  transition: .1s ease-in-out;  
   &:hover{
     background: #f4f4f4;
     border-radius: 3px;
+  }
+  &.topPosition{
+    background: #ff3000;
+    color: #f4f4f4;
   }
 `;
 
@@ -110,6 +130,8 @@ export const SetGameButton = styled.button`
   cursor: pointer;
   transition: .3s ease-in-out;  
   height: 36px;
+  opacity: 0;
+  animation: ${slideingAnimation3} .7s ease-in-out 1.3s 1 forwards;
   &:hover{
     background: #1f1f1f;
   }

@@ -18,7 +18,7 @@ import {
 
 const Game = () => {
   return (
-    <CardContainer className='CardContainer'>
+    <CardContainer className='Cardcontainer'>
       <CardBox className='Cardbox' data-framework="card1">
         <CardEmpty className='Face'/>
         <CardImg className='CardImg' src={Img1}/>

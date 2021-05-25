@@ -7,6 +7,7 @@ import {
   BestResultText,
   GameBox,
   GamePageContainer,
+  GameTitle,
   GPage,
   RestartButton,
   Tries,
@@ -25,10 +26,11 @@ const GamePage = () => {
             <TriesText> Current tries:</TriesText>
             <TriesNumber id="currentTries"> 0 </TriesNumber>
           </Tries>
-          <BestResult>
+          <BestResult id = "bestResult">
             <BestResultText> Best: </BestResultText>
             <BestResultNumber id="bestTries"> - </BestResultNumber>
           </BestResult>
+          <GameTitle id="gameTitle" >SPLENDEX</GameTitle>
           <RestartButton id="resetButton"> RESTART </RestartButton>
         </UpSection>  
         <Game/>

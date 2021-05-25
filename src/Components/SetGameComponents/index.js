@@ -24,8 +24,8 @@ const SetGame = () => {
           <DropUp id="DropUp" />
         </DeckSize>
         <DeckSlidebar id="DeckSlidebar">
-          <DeckLink id="DeckLink6">6</DeckLink>
-          <DeckLink id="DeckLink8">8</DeckLink>
+          <DeckLink id="DeckLink6">6 </DeckLink>
+          <DeckLink id="DeckLink8">8 </DeckLink>
           <DeckLink id="DeckLink10">10</DeckLink>
           <DeckLink id="DeckLink12">12</DeckLink>
           <DeckLink id="DeckLink14">14</DeckLink>
