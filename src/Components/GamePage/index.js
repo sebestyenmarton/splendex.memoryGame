@@ -27,9 +27,9 @@ const GamePage = () => {
           </Tries>
           <BestResult>
             <BestResultText> Best: </BestResultText>
-            <BestResultNumber> 5 </BestResultNumber>
+            <BestResultNumber id="bestTries"> - </BestResultNumber>
           </BestResult>
-          <RestartButton> RESTART </RestartButton>
+          <RestartButton id="resetButton"> RESTART </RestartButton>
         </UpSection>  
         <Game/>
       </GameBox>

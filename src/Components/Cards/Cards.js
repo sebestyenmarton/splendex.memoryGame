@@ -9,7 +9,6 @@ import Img7 from "../../Images/redux.png";
 import Img8 from "../../Images/sass.png";
 import Img9 from "../../Images/ts.png";
 import Img10 from "../../Images/webpack.png";
-import '../App';
 import {
   CardBox,
   CardContainer,

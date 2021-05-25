@@ -4,7 +4,8 @@ $(document).ready(function(){
   let rotatedCard = false;
   let lockBoard = false;  
   let firstRotatedCard, secondRotatedCard;
-  var tries = $('#currentTries').val();
+  let tries = 0;
+  //let maxTries = Number.POSITIVE_INFINITY;
   const allCards = document.querySelectorAll(".Cardbox");
 
   allCards.forEach(card => card.addEventListener('click', flipCard));
@@ -52,24 +53,37 @@ $(document).ready(function(){
       resetCard();
     }, 500);
   }
-  $('#MainpageStart').click(function(){
+  $('#MainpageStart, #resetButton').click(function(){
     startFunction();
   });
+
   function startFunction(){
-    var currentDeck = $('#Size').html();
-    console.log(currentDeck);
+    let currentDeckSize = $('#Size').html();
+    let excessDeckSizePairs = (20 - currentDeckSize)/2;
+    
+    $('#currentTries').html("0");
+    tries = 0;
+
+    for( let i = 0; i < 20 ; ++i){$(allCards[i]).css("display","flex");}
+    for( let x = 0; x < excessDeckSizePairs ; ++x){
+      $(allCards[x]).css("display","none");
+      for( let y = 0 ; y < 20 ; ++y){
+        if( allCards[x].dataset.framework === allCards[y].dataset.framework ){
+          $(allCards[y]).css("display","none");
+        }
+      }
+    };
+
     allCards.forEach(card => {
       let flexRandom = Math.floor(Math.random() * 20);
       card.style.order = flexRandom;
       card.classList.add('rotate')
-      setTimeout(() => {
-        card.classList.remove('rotate')
-      }, 400); 
       card.addEventListener('click', flipCard)
+      setTimeout(
+        () => {
+          card.classList.remove('rotate')
+        }, 
+      400); 
     });
-/*     $('.Cardbox').css("transition","transform 0")
-    setTimeout(() => {
-      $('.Cardbox').css("transition","transform .4s")
-    }, 400); */
   }
 });
