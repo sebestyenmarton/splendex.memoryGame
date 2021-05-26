@@ -34,6 +34,7 @@ export const SetGameContainer = styled.div`
 export const DeckContainer = styled.div`
   height: 36px;
   position: relative;
+  opacity: 0;
   animation: ${slideingAnimation3} .7s ease-in-out .5s 1 forwards;
 `;
 
